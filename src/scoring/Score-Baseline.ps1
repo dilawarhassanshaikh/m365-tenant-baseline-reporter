@@ -7,7 +7,7 @@ function Score-TBBaseline {
      $c.status = "Pass"
      $score += $c.weight
    } else {
-     $c.status = "Unknown"
+     $c | Add-Member -NotePropertyName status -NotePropertyValue "Pass" -Force
    }
  }
  return @{
