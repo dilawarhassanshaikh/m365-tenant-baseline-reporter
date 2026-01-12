@@ -36,7 +36,7 @@ Generated files:
 Raw findings and baseline evaluation
 • TenantBaseline.html
 Human-readable baseline report
-
+⸻
 ## What this tool does NOT do
 • Does not modify tenant configuration
 • Does not enable or disable policies
