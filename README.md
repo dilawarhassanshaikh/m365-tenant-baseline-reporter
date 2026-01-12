@@ -53,3 +53,6 @@ Early preview (v0.1)
 - Focused on basic collection and reporting
 - Some checks may return Unknown depending on tenant permissions
 - To be extended over time
+
+## License
+MIT License
