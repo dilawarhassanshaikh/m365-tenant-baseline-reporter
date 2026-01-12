@@ -36,9 +36,8 @@ Generated files:
 Raw findings and baseline evaluation
 • TenantBaseline.html
 Human-readable baseline report
-Sample output
-Below is a sanitized example of the generated HTML report:
-What this tool does NOT do
+
+## What this tool does NOT do
 • Does not modify tenant configuration
 • Does not enable or disable policies
 • Does not require Exchange or SharePoint PowerShell modules
