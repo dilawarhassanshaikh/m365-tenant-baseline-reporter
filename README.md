@@ -15,7 +15,7 @@ This tool is designed for visibility and assessment, not enforcement.
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser
 pwsh .\scripts\Invoke-TenantBaseline.ps1
-
+```
 This tool is read-only and runs locally using Microsoft Graph.
 ⸻
 ## Requirements
@@ -49,4 +49,4 @@ All operations are read-only.
 Early preview (v0.1)
 • Focused on basic collection and reporting
 • Some checks may return Unknown depending on tenant permissions
-• Designed to be extended over time
+• To be extended over time
