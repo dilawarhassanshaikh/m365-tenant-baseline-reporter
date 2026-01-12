@@ -1,0 +1,24 @@
+[
+ { "id":"SECDEF_001","title":"Security Defaults enabled","category":"Identity","severity":"High","weight":15,
+   "recommendation":"Enable Security Defaults or replace with equivalent Conditional Access coverage." },
+  
+ { "id":"CA_001","title":"Conditional Access policies exist (if Security Defaults disabled)","category":"Identity","severity":"High","weight":10,
+   "recommendation":"Create baseline Conditional Access policies (MFA, block legacy auth, admin protection)." },
+  
+ { "id":"CA_002","title":"At least one CA policy covers All Users","category":"Identity","severity":"Medium","weight":8,
+   "recommendation":"Ensure a baseline policy applies to all users (with break-glass exclusions documented)." },
+  
+ { "id":"CA_003","title":"CA policy blocks legacy authentication","category":"Identity","severity":"High","weight":12,
+   "recommendation":"Create a Conditional Access policy to block legacy authentication client types." },
+  
+ { "id":"ADMIN_001","title":"Global Administrators count is within threshold","category":"Identity","severity":"High","weight":12,
+   "recommendation":"Reduce permanent Global Admins; use least privilege and PIM where available." },
+  
+ { "id":"ORG_001","title":"Verified domains exist and default domain configured","category":"Tenant","severity":"Low","weight":5,
+   "recommendation":"Ensure your tenant has verified domains and the correct default domain." },
+  
+ { "id":"GUEST_001","title":"Guest invitations restricted (not open to everyone)","category":"Collaboration","severity":"Medium","weight":8,
+   "recommendation":"Restrict who can invite guests and review guest access posture regularly." },
+  
+ { "id":"CONSENT_001","title":"User consent posture is restricted","category":"Apps","severity":"High","weight":10,
+   "recommendation":"Restrict user consent; use admin consent workflows where possible." }
