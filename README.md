@@ -36,3 +36,18 @@ Generated files:
 Raw findings and baseline evaluation
 • TenantBaseline.html
 Human-readable baseline report
+Sample output
+Below is a sanitized example of the generated HTML report:
+What this tool does NOT do
+• Does not modify tenant configuration
+• Does not enable or disable policies
+• Does not require Exchange or SharePoint PowerShell modules
+• Does not send data outside your environment
+• Does not replace Microsoft Secure Score or Microsoft Defender
+All operations are read-only.
+⸻
+Current status
+Early preview (v0.1)
+• Focused on basic collection and reporting
+• Some checks may return Unknown depending on tenant permissions
+• Designed to be extended over time
