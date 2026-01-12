@@ -30,6 +30,7 @@ Directory.Read.All
 
 Admin consent is recommended for consistent results.
 
+---
 
 ## How to run:
 
