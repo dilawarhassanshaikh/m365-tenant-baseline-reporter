@@ -17,12 +17,3 @@ This tool is designed for **visibility and assessment**, not enforcement.
 Install Microsoft Graph (one time):
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser
-
-```md
----
-## Microsoft Graph permission
-The tool requests the following **read-only** Microsoft Graph scopes:
-- `Organization.Read.All`
-- `Policy.Read.All`
-- `Directory.Read.All`
-> Admin consent is recommended for consistent results.
