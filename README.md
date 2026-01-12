@@ -18,7 +18,7 @@ pwsh .\scripts\Invoke-TenantBaseline.ps1
 
 This tool is read-only and runs locally using Microsoft Graph.
 ⸻
-Requirements
+## Requirements
 • PowerShell 7 or later
 • Microsoft Graph PowerShell SDK
 ⸻
@@ -29,7 +29,7 @@ The tool uses the following read-only Microsoft Graph permissions:
 • Directory.Read.All
 Admin consent is recommended for consistent and complete results.
 ⸻
-Output
+## Output
 Results are written to the out folder in the repository.
 Generated files:
 • TenantBaseline.json
@@ -45,7 +45,7 @@ Human-readable baseline report
 • Does not replace Microsoft Secure Score or Microsoft Defender
 All operations are read-only.
 ⸻
-Current status
+## Current status
 Early preview (v0.1)
 • Focused on basic collection and reporting
 • Some checks may return Unknown depending on tenant permissions
