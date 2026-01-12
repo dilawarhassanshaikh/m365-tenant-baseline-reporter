@@ -17,6 +17,7 @@ This tool is designed for **visibility and assessment**, not enforcement.
 Install Microsoft Graph (one time):
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser
+
 ---
 ## Microsoft Graph permissions
 
