@@ -30,7 +30,8 @@ Directory.Read.All
 
 Admin consent is recommended for consistent results.
 
-How to run:
+
+## How to run:
 
 Download the repository
 Click Code → Download ZIP
@@ -44,7 +45,7 @@ Run the script:
 pwsh .\scripts\Invoke-TenantBaseline.ps1
 Sign in when prompted to Microsoft Graph.
 
-Output
+## Output
 
 Results are written to the out folder in the repository root.
 
@@ -60,7 +61,7 @@ To open the HTML report:
 
 Start-Process .\out\TenantBaseline.html
 
-Sample output
+## Sample output
 
 Below is a sanitized example of the generated HTML report:
 
@@ -80,7 +81,7 @@ All operations are read-only and run locally.
 
 Current status
 
-🚧 Early preview (v0.1)
+## 🚧 Early preview (v0.1)
 
 Focused on structure, data collection, and reporting foundation
 Some checks may return Unknown depending on tenant configuration or permissions
