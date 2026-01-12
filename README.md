@@ -18,7 +18,7 @@ Install Microsoft Graph (one time):
 ```powershell
 Install-Module Microsoft.Graph -Scope CurrentUser
 
-Microsoft Graph permissions
+## Microsoft Graph permissions
 
 The tool requests the following read-only Microsoft Graph scopes:
 
