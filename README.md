@@ -22,7 +22,7 @@ This tool is read-only and runs locally using Microsoft Graph.
 - PowerShell 7 or later
 - Microsoft Graph PowerShell SDK
 
-Microsoft Graph permissions
+## Microsoft Graph permissions
 The tool uses the following read-only Microsoft Graph permissions:
 - Organization.Read.All
 - Policy.Read.All
@@ -36,6 +36,9 @@ Generated files:
 Raw findings and baseline evaluation
 • TenantBaseline.html
 Human-readable baseline report
+```powershell
+Start-Process .\out\TenantBaseline.html
+```
 
 ## What this tool does NOT do
 - Does not modify tenant configuration
