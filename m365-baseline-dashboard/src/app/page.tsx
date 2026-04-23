@@ -19,7 +19,6 @@ import {
   TableCellLayout,
   Badge,
   Divider,
-  Image,
 } from '@fluentui/react-components';
 import {
   CheckmarkCircleRegular,
@@ -80,11 +79,21 @@ const useStyles = makeStyles({
   },
   loginCard: {
     padding: '40px',
-    width: '400px',
+    width: '450px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    textAlign: 'center',
     ...shorthands.gap('20px'),
+  },
+  microsoftButton: {
+    backgroundColor: '#2f2f2f',
+    color: 'white',
+    ...shorthands.padding('10px', '20px'),
+    '&:hover': {
+      backgroundColor: '#3f3f3f',
+      color: 'white',
+    }
   }
 });
 
@@ -105,9 +114,16 @@ export default function Dashboard() {
       <div className={styles.loginContainer}>
         <Card className={styles.loginCard}>
           <LockClosedRegular style={{ fontSize: '64px', color: '#0078d4' }} />
-          <Title1>Admin Sign In</Title1>
-          <Body1>Sign in to access your M365 Baseline Report</Body1>
-          <Button appearance="primary" size="large" onClick={login}>Sign in with Microsoft</Button>
+          <Title1>Microsoft 365 Admin Sign In</Title1>
+          <Body1>Sign in with your administrator account to access the Tenant Baseline Security Report.</Body1>
+          <Button
+            className={styles.microsoftButton}
+            size="large"
+            onClick={login}
+            icon={<Image src="https://authjs.dev/img/providers/microsoft.svg" width={20} height={20} />}
+          >
+            Sign in with Microsoft
+          </Button>
         </Card>
       </div>
     );
@@ -222,4 +238,7 @@ export default function Dashboard() {
       </section>
     </div>
   );
+}
+function Image({ src, width, height }: { src: string, width: number, height: number }) {
+  return <img src={src} width={width} height={height} alt="" />;
 }

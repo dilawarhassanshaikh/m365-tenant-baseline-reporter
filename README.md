@@ -37,6 +37,12 @@ Open the HTML report:
 ```powershell
 Start-Process .\out\TenantBaseline.html
 ```
+
+## M365 Baseline Dashboard (New)
+A modern, web-based version of this tool is now available in the `m365-baseline-dashboard` folder. It is built with Next.js and Fluent UI v9.
+
+See the [Dashboard README](m365-baseline-dashboard/README.md) for more details.
+
 ## What this tool does NOT do
 - Does not modify tenant configuration
 - Does not enable or disable policies

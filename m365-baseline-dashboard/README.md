@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# M365 Baseline Dashboard (Next.js & Fluent UI v9)
+
+This is a modern web-based dashboard for the M365 Tenant Baseline Reporter, built with Next.js 15 and Fluent UI v9.
+
+## Features
+- **Admin Sign-In**: Mock authentication flow for Microsoft administrators.
+- **Real-time Assessment**: Visual summary of tenant security posture.
+- **Multi-format Export**:
+  - **JSON**: Raw findings for automation.
+  - **HTML**: Self-contained report for sharing.
+  - **PDF**: Formal document layout with recommendations.
+
+## Screenshots
+
+### Sign In
+![Sign In](./docs/screenshots/login_page.png)
+
+### Dashboard
+![Dashboard](./docs/screenshots/dashboard_authed.png)
 
 ## Getting Started
 
-First, run the development server:
+1. Navigate to the dashboard directory:
+   ```bash
+   cd m365-baseline-dashboard
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **UI Components**: Fluent UI React v9
+- **Icons**: Fluent UI System Icons
+- **PDF Generation**: jsPDF & jsPDF-AutoTable
+- **Language**: TypeScript
