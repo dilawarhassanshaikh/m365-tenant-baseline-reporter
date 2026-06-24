@@ -99,7 +99,7 @@ function Write-Log {
     param([string]$Message, [ValidateSet('INFO','WARN','ERROR')]$Level = 'INFO')
     $entry = "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] [$Level] $Message"
     $entry | Tee-Object -FilePath $LogFile -Append | Write-Host -ForegroundColor (
-        switch ($Level) { 'WARN' { 'Yellow' } 'ERROR' { 'Red' } default { 'Cyan' } }
+        switch ($Level) { 'WARN' { 'Yellow' }; 'ERROR' { 'Red' }; default { 'Cyan' } }
     )
 }
 #endregion
